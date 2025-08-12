@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-purple-500 to-blue-600 min-h-screen flex flex-col items-center justify-center text-white"
+  >
+    <div class="text-center mb-6">
+      <h1 class="text-4xl font-bold mb-2">Tic-Tac-Toe</h1>
+      <p id="status" class="text-lg">X's Turn</p>
+    </div>
+    <div>
+      <p id="message" class="text-xl font-bold text-yellow-300 mb-4"></p>
+    </div>
+    <div
+      id="tictak"
+      class="grid grid-cols-3 gap-2 border-4 border-white p-4 bg-white/20 rounded-lg"
+    >
+      <button
+        data-index="0"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="1"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="2"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="3"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="4"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="5"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="6"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="7"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+      <button
+        data-index="8"
+        class="square border border-white h-20 w-20 flex items-center justify-center text-3xl cursor-pointer active:scale-105 hover:bg-white/10 transition-all"
+      ></button>
+    </div>
+    <button
+      id="resetBtn"
+      class="mt-6 active:scale-105 border-2 border-white bg-white/20 hover:bg-white/30 transition px-5 py-2 rounded-full"
+    >
+      Reset
+    </button>
+
+    <script src="src/script.js"></script>
+    <!-- <script type="module" src="/src/main.js"></script> -->
+  </body>
+</html>
