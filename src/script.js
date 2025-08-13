@@ -1,4 +1,5 @@
 const boxes = document.querySelectorAll(".square");
+let turn = document.getElementById("status");
 const reset = document
   .querySelector("#resetBtn")
   .addEventListener("click", () => resetGame());
@@ -19,10 +20,14 @@ boxes.forEach((box) => {
   box.addEventListener("click", () => {
     if (currPalyer) {
       box.innerText = "X";
+      turn.innerText = "O's turn";
       currPalyer = false;
+      // turn = false;
     } else {
       box.innerText = "O";
+      turn.innerText = "X's turn";
       currPalyer = true;
+      // turn = true;
     }
     box.disabled = true;
     winner();
@@ -70,5 +75,7 @@ const resetGame = () => {
     point.innerText = "";
     point.disabled = false;
     message.innerText = "";
+    turn.innerText = "X,s turn";
+    currPalyer = true;
   }
 };
